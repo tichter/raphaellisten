@@ -6,11 +6,11 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://tichter.github.io/raphaellisten2/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://tichter.github.io/raphaellisten2/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://tichter.github.io/raphaellisten2/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://tichter.github.io/raphaellisten2/images/favicon/manifest.json">
-    <link rel="mask-icon" href="https://tichter.github.io/raphaellisten2/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tichter.github.io/raphaellisten/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tichter.github.io/raphaellisten/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tichter.github.io/raphaellisten/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://tichter.github.io/raphaellisten/images/favicon/manifest.json">
+    <link rel="mask-icon" href="https://tichter.github.io/raphaellisten/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
@@ -26,8 +26,8 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <!-- Listen -->
-    <link rel="stylesheet" href="https://tichter.github.io/raphaellisten2/assets/css/listen.css">
-    <script src="https://tichter.github.io/raphaellisten2/assets/js/listen.js"></script>
+    <link rel="stylesheet" href="https://tichter.github.io/raphaellisten/assets/css/listen.css">
+    <script src="https://tichter.github.io/raphaellisten/assets/js/listen.js"></script>
 
 </head> 
 
@@ -49,7 +49,7 @@
 <h1 class='title'>Instructions</h1>
 
 <a
-    href="https://tichter.github.io/raphaellisten2/mushra/"
+    href="https://tichter.github.io/raphaellisten/mushra/"
     class='ui-btn-right ui-btn ui-btn-inline ui-mini
            ui-corner-all ui-btn-icon-right ui-icon-carat-r next'>
     Next
@@ -74,14 +74,14 @@
      >
 
 <form method="post"
-      action="https://api.staticman.net/v2/entry/tichter/raphaellisten2/gh-pages"
+      action="https://api.staticman.net/v2/entry/tichter/raphaellisten/gh-pages"
       class='submit-form'
       >
 
 <h2>Thank you, please submit your data:</h2>
 
 <input name="options[slug]" type="hidden" value='soundboard'>
-<input name="options[redirect]" type="hidden" value='https://tichter.github.io/raphaellisten2/mushra/'>
+<input name="options[redirect]" type="hidden" value='https://tichter.github.io/raphaellisten/mushra/'>
 
 <input name='fields[name]'
        value='My name'
@@ -178,9 +178,9 @@ just decide on a rank. An example is shown below.</p>
   $('#id-soundboard').on('pageshow', function () {
 
       if ('soundboard' === 'soundboard')
-        window.listen.createSoundboard('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Examples:","sounds":[{"button_label":"Natural","url":"sounds/examples/example_groundtruth.wav"},{"button_label":"Natural","url":"sounds/examples/example_interference_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_artifacts_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_distortion_anchor.wav"}]}]}', 'https://tichter.github.io/raphaellisten2')
+        window.listen.createSoundboard('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Examples:","sounds":[{"button_label":"Natural","url":"sounds/examples/example_groundtruth.wav"},{"button_label":"Natural","url":"sounds/examples/example_interference_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_artifacts_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_distortion_anchor.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
       else if ('soundboard' === 'mushra')
-        window.listen.createMUSHRA('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Examples:","sounds":[{"button_label":"Natural","url":"sounds/examples/example_groundtruth.wav"},{"button_label":"Natural","url":"sounds/examples/example_interference_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_artifacts_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_distortion_anchor.wav"}]}]}', 'https://tichter.github.io/raphaellisten2')
+        window.listen.createMUSHRA('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Examples:","sounds":[{"button_label":"Natural","url":"sounds/examples/example_groundtruth.wav"},{"button_label":"Natural","url":"sounds/examples/example_interference_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_artifacts_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_distortion_anchor.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
   })
 </script>
 
